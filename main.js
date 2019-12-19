@@ -27,11 +27,9 @@ $('#profiles').html(person);
 
 const search = () => {
 
-    // Declare variables
    var filter = $('#searchbox').val().toLowerCase();
    var li = $("#profiles li");
 
-   // Loop through all list items, and hide those who don't match the search query
     for (i = 0; i < li.length; i++) {
         let seachItemsName = li[i].getElementsByTagName("i")[0];
         let seachItemsUser = li[i].getElementsByTagName("i")[1];
@@ -42,8 +40,6 @@ const search = () => {
         }
     }
 }
-
-// Run search function on keyup of search bar input
 $('#searchbox').on('keyup', search);
 
 
