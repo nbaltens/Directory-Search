@@ -5,7 +5,6 @@ $.ajax({
       let users = data.results;
       console.log(users)
 
-
 let person = `<ul>`
 
 $.each(users, (user) => {
@@ -23,8 +22,6 @@ $.each(users, (user) => {
 person += `</ul>`;
 $('#profiles').html(person);
 
-
-
 const search = () => {
 
    var filter = $('#searchbox').val().toLowerCase();
@@ -41,10 +38,8 @@ const search = () => {
     }
 }
 $('#searchbox').on('keyup', search);
-
-
-
+  
     }
-  });
+});
 
  
